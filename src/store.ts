@@ -31,11 +31,12 @@ export const useStore = create<Create>((set, get) => ({
       id: "a",
       type: "osc",
       data: { frequency: 220, type: "sine" },
-      position: { x: 0, y: 0 },
+      position: { x: -25, y: 0 },
     },
-    { id: "b", data: { label: "gain" }, position: { x: 50, y: 50 } },
-    { id: "c", data: { label: "output" }, position: { x: -50, y: 100 } },
+    { id: "b", data: { label: "gain" }, position: { x: -100, y: 200 } },
+    { id: "c", data: { label: "output" }, position: { x: 100, y: 200 } },
   ],
+
   edges: [],
 
   onNodesChange(changes) {
